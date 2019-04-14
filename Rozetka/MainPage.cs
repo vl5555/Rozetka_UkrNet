@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using SeleniumExtras.PageObjects;
 using System.Text;
 
-namespace Rozetka
+namespace UkrNet
 {
     public class MainPage
     {

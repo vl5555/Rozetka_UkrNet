@@ -4,7 +4,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using System;
 
-namespace Rozetka
+namespace UkrNet
 {
     public class Tests
     {
@@ -14,7 +14,7 @@ namespace Rozetka
         public void Setup()
         {
             driver = new ChromeDriver(Environment.CurrentDirectory);
-            driver.Manage().Timeouts().ImplicitWait = System.TimeSpan.FromSeconds(10);
+            //driver.Manage().Timeouts().ImplicitWait = System.TimeSpan.FromSeconds(10);
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://rozetka.com.ua/");
         }
