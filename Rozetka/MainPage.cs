@@ -15,36 +15,9 @@ namespace UkrNet
         private const string shopingCart = "//a[@href='https://rozetka.com.ua/cart/']";
         private const string shopingCartPopUp = "//div[@class='header-actions__dummy-content header-actions__dummy-content_type_cart']";
 
-        public IWebElement LaptopsAndComputers
-        {
-            get
-            {                
-                return driver.FindElement(By.XPath(laptopsAndComputers));
-            }
-        }
-
-        public IWebElement Asus
-        {
-            get
-            {
-                return driver.FindElement(By.XPath(asus));
-            }
-        }
-
-        public IWebElement ShopingCart
-        {
-            get
-            {
-                return driver.FindElement(By.XPath(shopingCart));
-            }
-        }
-
-        public IWebElement ShopingCartPupUp
-        {
-            get
-            {
-                return driver.FindElement(By.XPath(shopingCartPopUp));
-            }
-        }
+        public IWebElement LaptopsAndComputers => driver.FindElement(By.XPath(laptopsAndComputers));
+        public IWebElement Asus => driver.FindElement(By.XPath(asus));
+        public IWebElement ShopingCart => driver.FindElement(By.XPath(shopingCart));
+        public IWebElement ShopingCartPupUp => driver.FindElement(By.XPath(shopingCartPopUp));
     }
 }
